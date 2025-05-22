@@ -1,2 +1,103 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+.btn-click{
+    padding: 10px;
+    background-color: cyan;
+}
+/* Psedu Classes */
+/* : */
+/* Special State of Element */
+.btn-click:hover{
+    background-color: darkblue;
+    cursor:grab;
+}
+#name:active{
+    border: 4px dashed darkcyan;
+}
+/* Unvisited Links */
+a:link{
+    color: darkgoldenrod;
+}
+a:visited{
+    color: darkgray;
+}
+/* Psedu Elements */
+/* :: */
+/* Special Style to Particular Part of Element */
+.description{
+    color: darkgreen;
+}
+.description::first-line{
+    font-weight:100000px;
+}
+.description::first-letter{
+    font-size: 25px;
+}
+.description::before{
+    content: "This is";
+}
+.description::after{
+    content: "End of it";
+}
+::selection{
+    background-color: darkgrey;
+    color:darkmagenta;
+}
+.container{
+    width: 100px;
+    height: 100px;
+    background-color: darkolivegreen;
+    /* Transitions */
+    transition: all 0.1s linear;
+}
+.container:hover{
+    border-radius: 50%;
+}
+.progress{
+    width: 100px;
+    height: 100px;
+    background-color:darkorange;
+    margin-top: 1px;
+    /* Transitions */
+    transition: all 0.7s ease-in-out;
+}
+.progress:hover{
+    /* width: 500px; */
+    rotate: -180deg;
+    background-color:darkorchid;
+}
+/* Position Models */
+/* With absolute the icon moves with screen */
+/* So we used fixed */
+.whatsapp{
+    position:fixed;
+    left: 10px;
+    bottom: 10px;
+}
+.navbar{
+    background-color: darkorchid;
+    position: sticky;
+    top: 0px;
+}
+.items-container{
+    width: 100%;
+    height: 200px;
+    background-color: darkred;
+    position: relative;
+}
+.items{
+    position: absolute;
+    left: 50px;
+    top: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: darksalmon;
+}
+.item1{
+    width: 50px;
+    height: 50px;
+    background-color:darkseagreen;
+}
+/* Static:By Default */
+/* Absolute:Outside normal flow, with 4 properties */
+/* Fixed:Same as absolute, where fixed not moved with screen */
+/* Relative:In normal flow, with 4 properties */
+/* Sticky:Same as absolute but sticks to top when scrolls down or going out of screen */
